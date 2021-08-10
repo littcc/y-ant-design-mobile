@@ -28,13 +28,13 @@
 @opacity-disabled: 0.3;   // switch checkbox radio 等组件禁用的透明度
 
 // 全局/品牌色
-@brand-primary: #108ee9;
-@brand-primary-tap: #0e80d2;
-@brand-success: #6abf47;
-@brand-warning: #ffc600;
-@brand-error: #f4333c;
-@brand-important: #ff5b05;  // 用于小红点
-@brand-wait: #108ee9;
+@brand-primary: var(--brand-primary);
+@brand-primary-tap: var(--brand-primary-tap);
+@brand-success: var(--brand-success);
+@brand-warning: var(--brand-warning);
+@brand-error: var(--brand-error);
+@brand-important: var(--brand-important);
+@brand-wait: var(--brand-wait);
 
 // 边框色
 @border-color-base: #ddd;
@@ -110,7 +110,7 @@
 @primary-button-fill-tap: @brand-primary-tap;
 
 @ghost-button-color: @brand-primary;    // 同时应用于背景、文字颜色、边框色
-@ghost-button-fill-tap: fade(@brand-primary, 60%);
+@ghost-button-fill-tap: hsla(var(--brand-primary-hsl), 0.6);
 
 @warning-button-fill: #e94f4f;
 @warning-button-fill-tap: #d24747;
@@ -146,7 +146,7 @@
 // segmented-control
 @segmented-control-color: @brand-primary;  // 同时应用于背景、文字颜色、边框色
 @segmented-control-height: 27 * @hd;
-@segmented-control-fill-tap: fade(@brand-primary, 0.1);
+@segmented-control-fill-tap: hsla(var(--brand-primary-hsl), 0.1);
 
 // tab-bar
 @tab-bar-fill: #ebeeef;
